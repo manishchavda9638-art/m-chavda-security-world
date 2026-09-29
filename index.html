@@ -1,0 +1,7 @@
+{% extends "base.html" %}{% block content %}
+<section class="hero"><div><small>CYBERSECURITY • CODING • PRACTICE</small><h1>Learn. Code. Practice. Secure.</h1><p>Python, Java, Web Development, Cybersecurity, Ethical Hacking, SOC, Linux, Forensics and CTF learning in one platform.</p><a class="btn" href="#courses">Start Learning</a><a class="btn ghost" href="/register">Create Account</a></div><div class="terminal">MCSW PLATFORM<br><br>✓ Courses<br>✓ Practice progress<br>✓ CTF arena<br>✓ Certificates<br>✓ Verification<br>✓ Admin dashboard</div></section>
+<section id="courses"><h2>Learning Academy</h2><div class="grid">{% for key,name,desc in courses %}<article class="card"><div class="emoji">🛡️</div><h3>{{name}}</h3><p>{{desc}}</p><a class="btn small" href="/course/{{key}}">Open Course</a></article>{% endfor %}</div></section>
+<section><div class="safe"><b>Safe practice:</b> Ethical-hacking exercises are intended for authorized labs, CTFs and systems you own or have permission to test.</div></section>
+<section><h2>What you get</h2><div class="grid"><div class="card"><h3>🧪 Practice</h3><p>Lesson completion, quizzes and CTF-style learning.</p></div><div class="card"><h3>📊 Progress</h3><p>Your completed lessons and certificates stay linked to your account.</p></div><div class="card"><h3>🎓 Certificates</h3><p>Finish all lessons in a course to receive a completion certificate and verification ID.</p></div></div></section>
+<section><h2>Contact</h2><p>Email: <b>chavdamohan965@gmail.com</b><br>Phone: <b>9638769881</b></p></section>
+{% endblock %}
